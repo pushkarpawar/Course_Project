@@ -151,7 +151,7 @@ echo -e "No reboot events are recorded."
 echo -e "\n\nMost Recent 3 Shutdown Events"
 echo -e "$D$D"
 last -x 2> /dev/null|grep shutdown 1> /dev/null && /usr/bin/last -x 2> /dev/null | grep shutdown | head -3 || \
-echo -e "No shutdown events are recorded."
+echo -e "No shutdown events are recorded"
 
 #--------Print top 5 Memory & CPU consumed process threads---------#
 #--------excludes current running program which is hwlist----------#
